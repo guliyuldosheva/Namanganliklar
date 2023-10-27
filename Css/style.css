@@ -1,4 +1,6 @@
 /*FONTS*/
+/*General styles*/
+/*CONTAINER*/
 @font-face {
   font-display: swap;
   font-family: "Rubik";
@@ -53,6 +55,23 @@
   font-weight: 500;
   src: url("../webfonts/roboto-v30-latin-500italic.woff2") format("woff2");
 }
+/*General styles*/
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+::after ::before {
+  box-sizing: inherit;
+}
 body {
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #434343;
+}
+/*CONTAINER*/
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
