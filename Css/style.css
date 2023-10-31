@@ -96,11 +96,20 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
+.site-header__exchange-rates {
+  margin-left: 17px;
+}
 .site-header__actions {
   display: flex;
   margin-left: auto;
 
   flex-wrap: wrap;
+}
+.site-header__search-button {
+  margin-right: 22px;
+}
+.site-header__language-toggler {
+  margin-right: 24px;
 }
 /*LOGO*/
 .logo {
@@ -113,12 +122,12 @@ body {
 /*EXCHANGE-RATES*/
 .exchange-rates {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style-type: none;
-  align-items: center;
-  margin-left: 17px;
-  flex-wrap: wrap;
+
   color: #7a7a7a;
 }
 .exchange-rates__item {
@@ -133,14 +142,13 @@ body {
   border: none;
   background-color: #fff;
   border-radius: 5px;
-  margin-right: 22px;
 }
 /*LANGUAGE TOGGLER*/
 .language-toggler {
   padding: 10px;
   border: none;
   background-color: #fff;
-  margin-right: 24px;
+
   border-radius: 5px;
 }
 /*TELEGRAM SUB*/
