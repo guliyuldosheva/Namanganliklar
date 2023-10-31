@@ -1,6 +1,12 @@
+/*TAble of contents*/
 /*FONTS*/
-/*General styles*/
+/*GENERAL STYLES*/
 /*CONTAINER*/
+/*SITE-HEADER*/
+/*EXCHANGE -RATES*/
+/*SEARCH BUTTON*/
+/*LANGUAGE TOGGLER*/
+/*TELEGRAM -SUB*/
 @font-face {
   font-display: swap;
   font-family: "Rubik";
@@ -14,7 +20,8 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  src: url("../webfonts/rubik-v28-latin-500.woff2") format("woff2");
+  src: url("../webfonts/Rubik-Medium.woff2") format("woff2"),
+    url("../webfonts/Rubik-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -37,7 +44,7 @@
   font-family: "Roboto";
   font-style: italic;
   font-weight: 400;
-  src: url("../webfonts/roboto-v30-latin-italic.woff2") format("woff2");
+  src: url("..") format("woff2");
 }
 
 @font-face {
@@ -64,7 +71,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #434343;
@@ -74,4 +80,72 @@ body {
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
+}
+/*SITE-HEADER*/
+.site-header {
+  padding-top: 40px;
+  border-top: 4px solid #295093;
+  background-color: #f6f6f9;
+  padding-bottom: 23px;
+}
+.site-header__top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 19px;
+}
+.site-header__actions {
+  display: flex;
+  margin-left: auto;
+
+  flex-wrap: wrap;
+}
+/*EXCHANGE-RATES*/
+.exchange-rates {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  align-items: center;
+  margin-left: 17px;
+  flex-wrap: wrap;
+  color: #7a7a7a;
+}
+.exchange-rates__item {
+  margin-right: 26px;
+}
+.exchange-rates__icon {
+  color: #285193;
+}
+/*SEARCH BUTTON*/
+.search-button {
+  padding: 8px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/*LANGUAGE TOGGLER*/
+.language-toggler {
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/*TELEGRAM SUB*/
+.telegram-sub {
+  background-image: linear-gradient(#1e96c8 15.07%, #37aee2 85.96%);
+  border-radius: 5px;
+
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #1e96c8;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+telegram-sub__text {
+  font-size: 700;
 }
